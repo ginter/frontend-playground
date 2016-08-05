@@ -1,0 +1,18 @@
+exports[`ProjectList renders correctly with a single project 1`] = `
+<ul>
+  <li
+    className="project-row">
+    projName
+    <button
+      onClick={[Function onClick]}>
+      DELETE
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`ProjectList renders correctly with no projects 1`] = `
+<p>
+  No projects found
+</p>
+`;

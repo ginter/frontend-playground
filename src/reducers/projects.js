@@ -3,7 +3,7 @@ import { DELETE_PROJECT } from '../action-types'
 const projects = (state = [], action) => {
   switch(action.type) {
     case DELETE_PROJECT:
-      return state.filter(project => project.uid !== action.payload)
+      return state.filter(project => project.uid !== action.payload.uid)
     default:
       return state
   }

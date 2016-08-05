@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
-import { createStore } from 'redux'
+import { createStore, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
-import rootReducer from './reducer'
-import VisibleProjectList from './visible-project-list'
-
-const store = createStore(rootReducer);
+import thunk from "redux-thunk"
+import createLogger from "redux-logger"
+import reducer from './reducers'
+import { VisibleProjectList } from './containers'
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    const logger = createLogger();
+    this.store = createStore(reducer, props, applyMiddleware(thunk, logger));
+  }
+
   render() {
     return(
-      <Provider store={store}>
+      <Provider store={this.store}>
         <VisibleProjectList />
       </Provider>
     );

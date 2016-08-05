@@ -5,7 +5,7 @@ const searchQuery = (state = '', action) => {
     case SEARCH:
       return action.payload
     default:
-      return action.data
+      return state
   }
 }
 

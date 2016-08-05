@@ -1,5 +1,0 @@
-exports[`ProjectList renders correctly with no projects 1`] = `
-<p>
-  No projects found
-</p>
-`;
