@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { createStore, applyMiddleware } from 'redux'
-import { Provider } from 'react-redux'
 import thunk from "redux-thunk"
 import createLogger from "redux-logger"
+import { Provider } from 'react-redux'
 import reducer from './reducers'
-import { VisibleProjectList } from './containers'
+import { ProjectsPage } from './components'
 
 class App extends Component {
   constructor(props) {
@@ -17,7 +17,7 @@ class App extends Component {
   render() {
     return(
       <Provider store={this.store}>
-        <VisibleProjectList />
+        <ProjectsPage />
       </Provider>
     );
   }

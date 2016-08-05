@@ -1,0 +1,27 @@
+exports[`ProjectForm renders correctly with a name provided 1`] = `
+<form
+  name="new-project"
+  onSubmit={[Function onSubmit]}>
+  <input
+    defaultValue="name"
+    name="project-name"
+    onChange={[Function onChange]}
+    type="text" />
+  <input
+    type="submit" />
+</form>
+`;
+
+exports[`ProjectForm renders correctly with no name provided 1`] = `
+<form
+  name="new-project"
+  onSubmit={[Function onSubmit]}>
+  <input
+    defaultValue=""
+    name="project-name"
+    onChange={[Function onChange]}
+    type="text" />
+  <input
+    type="submit" />
+</form>
+`;

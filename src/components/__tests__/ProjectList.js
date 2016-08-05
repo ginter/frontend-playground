@@ -3,8 +3,6 @@ import renderer from 'react-test-renderer'
 
 import ProjectList from '../ProjectList'
 
-jest.unmock('../ProjectList');
-
 describe('ProjectList', () => {
   it('renders correctly with no projects', () => {
     const component = renderer.create(<ProjectList projects={[]} />);

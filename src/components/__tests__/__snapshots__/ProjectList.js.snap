@@ -2,7 +2,9 @@ exports[`ProjectList renders correctly with a single project 1`] = `
 <ul>
   <li
     className="project-row">
-    projName
+    <p>
+      projName
+    </p>
     <button
       onClick={[Function onClick]}>
       DELETE

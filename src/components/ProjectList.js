@@ -7,7 +7,7 @@ const ProjectList = ({ projects, deleteProject }) => {
     <ul>
       {projects.map(project => (
         <li key={project.uid} className='project-row'>
-          {project.name}
+          <p>{project.name}</p>
           <button onClick={() => deleteProject(project.uid)}>DELETE</button>
         </li>
         )

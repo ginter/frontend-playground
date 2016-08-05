@@ -1,0 +1,18 @@
+exports[`ProjectsPage renders correctly 1`] = `
+<div>
+  <form
+    name="new-project"
+    onSubmit={[Function onSubmit]}>
+    <input
+      defaultValue=""
+      name="project-name"
+      onChange={[Function onChange]}
+      type="text" />
+    <input
+      type="submit" />
+  </form>
+  <p>
+    No projects found
+  </p>
+</div>
+`;

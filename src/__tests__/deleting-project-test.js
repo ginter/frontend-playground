@@ -4,7 +4,7 @@ import { mount } from 'enzyme'
 import App from '../App'
 
 describe('deleting a project', () => {
-  it('removes project from list', () => {
+  it('removes the project from the list', () => {
     const project = { uid: 'projId', name: 'projName' };
     const wrapper = mount(<App projects={[project]} />);
 
